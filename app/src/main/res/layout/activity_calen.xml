@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:orientation="vertical"
+        android:weightSum="1">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="900dp"
+            android:background="#e0e0e0"
+            android:orientation="vertical"
+            android:weightSum="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="600dp"
+                android:layout_marginBottom="30dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/back"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:weightSum="1">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/button1"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginLeft="15sp"
+                        android:layout_marginTop="20sp"
+                        android:background="@drawable/btn"
+                        android:gravity="center"
+                        android:onClick="setDateFrom"
+                        android:text="Select Date "
+                        android:textAllCaps="false"
+                        android:textColor="#fff" />
+
+                    <TextView
+                        android:id="@+id/textView1"
+                        android:layout_width="140dp"
+                        android:layout_height="30dp"
+                        android:layout_alignRight="@+id/button1"
+                        android:layout_marginTop="20sp"
+                        android:layout_marginLeft="20sp"
+                        android:textColor="#000000"
+                        android:background="#e0e0e0"
+                        android:text="Selected Date"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/button"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginLeft="15sp"
+                        android:layout_marginTop="20sp"
+                        android:background="#1a237e"
+                        android:gravity="center"
+                        android:text="Feedback Type"
+                        android:textAllCaps="false"
+                        android:textColor="#fff" />
+
+                    <Spinner
+                        android:id="@+id/spinner1"
+                        android:layout_width="150sp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10sp"
+                        android:layout_marginTop="20sp"
+                        android:background="@android:drawable/btn_dropdown"
+                        android:spinnerMode="dropdown"></Spinner>
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/done"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="15sp"
+                    android:layout_marginTop="20sp"
+                    android:background="@drawable/btn"
+                    android:onClick="GO"
+                    android:text="Done"
+                    android:textAllCaps="false"
+                    android:textColor="#fff" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
